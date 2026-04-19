@@ -1,0 +1,126 @@
+/* =========================================================================
+   硅基陪伴项目 (正大杯) - 全局商务样式表 (Business Consulting Theme)
+   ========================================================================= */
+
+/* 1. 全局背景与排版基准 */
+.stApp {
+    background-color: #FAFAFA;
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #1A2B4C !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px;
+}
+
+p, span, label, li {
+    color: #333333;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* 2. 侧边栏 (Sidebar) 深度定制 */
+[data-testid="stSidebar"] {
+    background-color: #F0F4F8;
+    border-right: 1px solid #E2E8F0;
+}
+[data-testid="stSidebar"] h1 {
+    font-size: 20px !important;
+    color: #1A2B4C !important;
+    border-bottom: 2px solid #1E3A8A;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* 3. 核心交互控件：按钮 (Buttons) */
+div.stButton > button:first-child {
+    background-color: #1A2B4C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    width: 100%;
+}
+
+div.stButton > button:first-child:hover {
+    background-color: #111D33;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transform: translateY(-1px);
+    border-color: transparent;
+    color: #FFFFFF;
+}
+
+/* 4. 问卷表单与交互面板强化 */
+.stRadio > div {
+    background: #FFFFFF;
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid #EBEBEB;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}
+
+.stSelectbox > div > div {
+    border-radius: 4px;
+    border-color: #E2E8F0;
+    background-color: #FFFFFF;
+}
+
+/* 5. 商业分析卡片 (Card UI) 通用类 */
+/* 供 Python 中 st.markdown("<div class='biz-card'>...</div>") 调用 */
+.biz-card {
+    background-color: #FFFFFF;
+    padding: 24px;
+    border-radius: 4px;
+    border-top: 3px solid #1A2B4C;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    margin-bottom: 24px;
+    border-left: 1px solid #EBEBEB;
+    border-right: 1px solid #EBEBEB;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.biz-card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1A2B4C;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #F0F0F0;
+    padding-bottom: 10px;
+}
+
+.biz-highlight {
+    color: #1E3A8A;
+    font-weight: 600;
+}
+
+/* 6. 数据看板顶栏指标 (Metrics) */
+.metric-box {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    padding: 20px;
+    border-left: 4px solid #1E3A8A;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    text-align: center;
+    margin-bottom: 20px;
+    border-top: 1px solid #EBEBEB;
+    border-right: 1px solid #EBEBEB;
+    border-bottom: 1px solid #EBEBEB;
+}
+.metric-value { font-size: 32px; font-weight: 700; color: #1A2B4C; }
+.metric-label { font-size: 14px; color: #666666; margin-top: 8px; font-weight: 500; }
+
+/* 7. Tabs 标签页美化 */
+[data-baseweb="tab-list"] {
+    gap: 30px;
+    border-bottom: 2px solid #E2E8F0;
+}
+[data-baseweb="tab"] {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    font-weight: 500;
+}
